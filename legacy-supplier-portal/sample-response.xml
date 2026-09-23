@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Reponse attendue pour supplierId=1 -->
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <SOAP-ENV:Body>
+    <ns2:getSupplierCatalogAndPricingResponse xmlns:ns2="http://upg.com/supplierportal">
+      <ns2:supplierCode>SUP-001</ns2:supplierCode>
+      <ns2:companyName>Burundi AgroSupply Ltd</ns2:companyName>
+      <ns2:product>
+        <ns2:sku>SKU-RICE-5KG</ns2:sku>
+        <ns2:productName>Riz parfume 5kg (sac)</ns2:productName>
+        <ns2:wholesalePrice>12.75</ns2:wholesalePrice>
+        <ns2:leadTimeDays>7</ns2:leadTimeDays>
+        <ns2:supplierStockLevel>450</ns2:supplierStockLevel>
+      </ns2:product>
+      <ns2:product>
+        <ns2:sku>SKU-BEANS-1KG</ns2:sku>
+        <ns2:productName>Haricots rouges 1kg (paquet)</ns2:productName>
+        <ns2:wholesalePrice>3.50</ns2:wholesalePrice>
+        <ns2:leadTimeDays>5</ns2:leadTimeDays>
+        <ns2:supplierStockLevel>1200</ns2:supplierStockLevel>
+      </ns2:product>
+      <ns2:product>
+        <ns2:sku>SKU-OIL-5L</ns2:sku>
+        <ns2:productName>Huile vegetale 5L (bidon)</ns2:productName>
+        <ns2:wholesalePrice>18.90</ns2:wholesalePrice>
+        <ns2:leadTimeDays>14</ns2:leadTimeDays>
+        <ns2:supplierStockLevel>300</ns2:supplierStockLevel>
+      </ns2:product>
+    </ns2:getSupplierCatalogAndPricingResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Requete SOAP : supplierId = 1 -->
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:upg="http://upg.com/supplierportal">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <upg:getSupplierCatalogAndPricingRequest>
+      <upg:supplierId>1</upg:supplierId>
+    </upg:getSupplierCatalogAndPricingRequest>
+  </soapenv:Body>
+</soapenv:Envelope>

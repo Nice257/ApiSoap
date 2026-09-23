@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Contrat SOAP du Portail Fournisseur legacy.
+    Namespace unique : http://upg.com/supplierportal
+    Les types SQL sont mappes fidElementement :
+      DECIMAL -> xs:decimal
+      INT     -> xs:int
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://upg.com/supplierportal"
+           xmlns:tns="http://upg.com/supplierportal"
+           elementFormDefault="qualified">
+
+    <!-- ============================ REQUETE ============================ -->
+    <xs:element name="getSupplierCatalogAndPricingRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="supplierId" type="xs:long"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- ============================ PRODUIT ============================ -->
+    <xs:complexType name="productType">
+        <xs:sequence>
+            <xs:element name="sku" type="xs:string"/>
+            <xs:element name="productName" type="xs:string"/>
+            <xs:element name="wholesalePrice" type="xs:decimal"/>
+            <xs:element name="leadTimeDays" type="xs:int"/>
+            <xs:element name="supplierStockLevel" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- ============================ REPONSE ============================ -->
+    <xs:element name="getSupplierCatalogAndPricingResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="supplierCode" type="xs:string"/>
+                <xs:element name="companyName" type="xs:string"/>
+                <xs:element name="product" type="tns:productType"
+                            minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- ============================ FAULT ============================ -->
+    <xs:element name="supplierNotFoundFault">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="message" type="xs:string"/>
+                <xs:element name="supplierId" type="xs:long"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
