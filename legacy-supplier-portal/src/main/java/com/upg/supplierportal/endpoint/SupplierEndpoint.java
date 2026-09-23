@@ -7,6 +7,7 @@ import com.upg.supplierportal.generated.GetSupplierCatalogAndPricingResponse;
 import com.upg.supplierportal.generated.ProductType;
 import com.upg.supplierportal.repository.SupplierRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
@@ -28,6 +29,9 @@ public class SupplierEndpoint {
         this.supplierRepository = supplierRepository;
     }
 
+    // La session Hibernate reste ouverte pendant toute la methode :
+    // indispensable pour charger la collection lazy supplier.catalogs
+    @Transactional(readOnly = true)
     @PayloadRoot(namespace = NAMESPACE_URI,
             localPart = "getSupplierCatalogAndPricingRequest")
     @ResponsePayload
