@@ -4,7 +4,7 @@ Projet d'examen du cours **API SOAP : Intégration Interopérabilité (SOAP / RE
 
 ## Équipe & répartition des tâches
 
-### 👤 Personne 1 — Backend Spring Boot (Contrat SOAP)
+### 👤 NSABIYUMVA Nice Stella — Backend Spring Boot (Contrat SOAP)
 
 Responsabilités :
 
@@ -18,7 +18,7 @@ Responsabilités :
 
 ---
 
-### 👤 Personne 2 — Client Node.js (Consommation SOAP)
+### 👤 ITERITEKA Ange Chanciella — Client Node.js (Consommation SOAP)
 
 Responsabilités :
 
@@ -32,7 +32,7 @@ Responsabilités :
 
 ---
 
-### 👤 Personne 3 — Intégration, Réutilisation & Livrables
+### 👤 NIYURUKUNDO Méthode — Intégration, Réutilisation & Livrables
 
 Responsabilités :
 
