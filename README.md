@@ -1,6 +1,6 @@
 # API SOAP — Intégration Interopérabilité (UPG TIC/GL4)
 
-Projet d'examen du cours **API SOAP : Intégration Interopérabilité (SOAP / REST)**. Ce dépôt contient le **système Legacy Spring Boot** qui expose un service SOAP de portail fournisseur. L'application Node.js/MongoDB est développée dans un dépôt séparé et consomme ce service SOAP.
+Projet d' **API SOAP : Intégration Interopérabilité (SOAP / REST)**. Ce dépôt contient le **système Legacy Spring Boot** qui expose un service SOAP de portail fournisseur. L'application Node.js/MongoDB est développée dans un dépôt séparé et consomme ce service SOAP.
 
 ## Équipe & répartition des tâches
 
